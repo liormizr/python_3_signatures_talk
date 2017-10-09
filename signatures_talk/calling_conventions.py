@@ -43,7 +43,7 @@ def args_and_kwargs():
 
     func(1, 2, x=3, y=4, z=5)
     # same as:
-    func(*(1, 2), **{'x': 3, 'y': 4, 'z': 5})
+    func(*(1, 2), *(3, 4), **{5: 5, 6: 6, 7: 7})
 
 
 @include

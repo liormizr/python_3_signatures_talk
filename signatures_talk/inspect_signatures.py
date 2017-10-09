@@ -12,7 +12,7 @@ def signature_method():
     """
     from inspect import signature, Signature
 
-    def func(a, *, b: int, **kwargs):
+    def func(a, *, b: int, **kwargs) -> bool:
         ...
 
     func_signature = signature(func)
